@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <!--==================== UNICONS ====================-->
+    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">  
     <!--==================== CSS ====================-->
+   <link rel="stylesheet" href="/assets/normalize.css">
     <link rel="stylesheet" href="/assets/style.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hygienitech - DMV : Home</title>
@@ -14,7 +17,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src = "assets/logofin.svg" alt="Hygienitech DMV Logo" ></a>
+            <a href="#" class="nav__logo"><img src="/assets/img/logofin.svg" alt=""></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -56,25 +59,26 @@
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-           <div class="nav__btns">
-                   
-                   <div class="nav__toggle" id="nav-toggle">
-                       <i class="uil uil-apps"></i>
-                   </div>
-
-
+    
         </nav>
+        <div class="nav__btns">
+                   
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+</div>
+
     </header>
 
      <!--==================== MAIN ====================-->
-     <main class="main">
+     <main class="main ">
     <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <div class="home__content grid">
+                <div class="home__content">
 
                     <div class="home__data">
-                        <h1 class="home__title">We are the  <span class="primary">best</span> solution for today's problems.</h1>
+                        <h1 class="home__title">We are the <span class="primary">best</span> solution for today's problems.</h1>
                         <p class="home__description">Our dry and chemical-free cleaning and sanitizing process works on mattresses, pillows, furniture, hard surfaces, office equipment, toys and more!
                             </p>
                             <p class="home__description">
@@ -103,30 +107,72 @@
 
     <div class="services__container container grid">
       
-        <div class="services__content">
-            <p class="services__heading">
-                Services
-            </p>
-            <p><h1 class="primary">What we offer</h1>
-                <img src="/assets/img/linegroup.svg" class="linegroup">
-            </p>
-            
-           
-            
-           <img src="/assets/img/boxpatternsmall.svg" class="boximg2" alt="">
-            <img src="/assets/img/boxpatternsmall.svg" class="boximg3" alt="">
-            <div class="card__container">
-                <a href="lodging.html"> <img src="/assets/img/hotelscard.svg" class="card" alt=""></a>
-                <a href="daycare.html"> <img src="/assets/img/daycarescard.svg" class="card" alt=""></a>
-                <a href="facilities.html"> <img src="/assets/img/homescard.svg" class="card" alt=""></a>
-                
-            </div>
-           
+        <div class="services__content ">
+            <div class="services-hero">
+                <div class="services-hero__img">
+                    <img src="/assets/img/hygienitechalteredsmall.png" alt="" class="services-logo">
+                </div>
+                <div class="services-hero__text">
+                    
+                    <p class="services__heading">
+                     SERVICES
+                    </p>
+                    
+                    <ul class="services__subtitle">
+                        <li>Sanitize</li>
+                        <li>Clean &</li>
+                        <li>Eliminate</li>
+                    </ul>
+                    
+                    <p class="italics">
+                        Use Our Hygienitech Sanitizing Systems for a Clean, Sanitized, and Healthy Environment
+                    </p>
+          
+                </div>
+         </div>
+         
+         <div class="card__container">
+            <!--Card One -->
+        <div class="card">
+                <img src="/assets/img/hotels-card-icon.svg" alt="">
+            <ul><li>Hotels</li>
+            <li>Airbnb</li>
+            <li>Multi-bed facilities</li></ul>
+            <p>We offer one of the only ways to keep mattresses clean and safe, keeping your guests happy and healthy.</p>
+            <p class="card-button"><a href="lodging.html">MORE</a></p>
+        </div>
+        <!--Card Two -->
+        <div class="card">
+                <img src="/assets/img/daycare-card-icon.svg" alt="">
+            <ul><li><br></li>
+                <li>Daycares</li>
+                <li><br></li>
+           </ul>
+            <p>Germs in daycares, harmful contaminents, and how Hygienitech can help keep our children safe.</p>
+            <p class="card-button"><a href="daycare.html">MORE</a></p>
+        </div>
+        <!--Card Three -->
+        <div class="card">
+                <img src="/assets/img/homes-card-icon.svg" alt="">
+            <ul><li>Homes</li>
+            <li>Offices</li>
+            <li>And more!</li></ul>
+            <p>Learn more about how Hygienitech can help you reduce contaminents and allergies in these spaces.</p>
+            <p class="card-button"><a href="facilities.html">MORE</a></p>
+        </div>
+     
             
         </div>
+     </div>
+    
+    
+            
+           
+            
+    
             
           
-        </div>
+       
      
     
    
@@ -138,25 +184,28 @@
 <section class="about section" id="about">
     <div class="about__container container grid">
         <div class="about__content">
+            <div class="about-text">
             <p class="about__heading">
-                About
+                ABOUT US
             </p>
             <p><h1 class="primary">What is HYGIENITECH?</h1></p>
             <p class="about-data">Hygienitech is a cleaning and sanitizing sysytem that safely eliminates Dust Mites, 99.9% Bacteria, E-coli, H1N1, Germs, Viruses; including Covid-19, Pollen, Mold, Mildrew and Fungal Spores, and numerous other harmful contaminants found in Mattresses and Upholstered items as well as on hard nonporous surfaces found in homes, hotels, daycares, and many other establishments. </p>
-            <img src="/assets/img/boxpattern.svg" class="boximg" alt="">
-            <img src="/assets/img/aboutimg.svg" class="aboutimg" alt="">
-        </div>
+                 </div>
+           <div class="about-img__container">
+            <img src="/assets/img/about-icon.svg" class="about-img" alt="">
+             </div>
     </div>
-    <div class="about__container container">
-        <div class="about__content2 grid">
-            <div class="about-content2-wrapper">
-            <p class="about__heading2">
-                About
-            </p>
+ 
+   
+        <div class="about__content">
+           
+            <div class="about-text">
             <p><h1>How do HYGIENITECH Systems work?</h1></p>
-            <p class="about-data2">Our system is composed of an extremely powerful  extraction device with a built in UV-C germicidal light that penetrates deep into any porous surface to eradicate and remove harmful contaminants. UV-C light is an extreme low-grade ultra violet radiation that targets and deactivates the DNA of dust mites and other microorganisms, thus destorying their ability to multiply and cause disease. </p>
+
+            <p class="about-data">Our system is composed of an extremely powerful  extraction device with a built in UV-C germicidal light that penetrates deep into any porous surface to eradicate and remove harmful contaminants. UV-C light is an extreme low-grade ultra violet radiation that targets and deactivates the DNA of dust mites and other microorganisms, thus destorying their ability to multiply and cause disease. </p>
+
         </div>
-            
+            <div class="ul-wrapper">
             <div class="ul-container">
                 <h1>Benefits</h1>
                 <ul aria-label="Benefits" class="about-ul">
@@ -168,9 +217,9 @@
                     <li class="about-li">Create a virus / germ free environment</li>
                     
                 </ul>
-</div>
-<div class="ul-container">
-    <h1>Eliminates</h1>
+            </div>
+                <div class="ul-container">
+             <h1>Eliminates</h1>
                 <ul aria-label="Eliminates" class="about-ul">
                     <br>
                     <li class="about-li">COVID 19</li>
@@ -180,10 +229,11 @@
                     <li class="about-li">Germs</li>
                     <li class="about-li">Many more harmful contaminents</li>
                 </ul>
+                </div>
+               
+     
+            </div>
         </div>
-        <img src="/assets/img/boxpatternsmall.svg" class="boximg2" alt="">
-        </div>
-   
     </div>
 
 </section>
@@ -234,13 +284,13 @@
                     <label for="" class="contact__label">Message</label>
                     <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                 </div>
-                <div>
+          
                    
                     <a href="#" class="button button--flex">
                         Send Message
                         <i class="uil uil-message button__icon"></i>
                     </a>
-                </div>
+               
             </div>
         </form>
 
