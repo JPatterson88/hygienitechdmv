@@ -160,6 +160,14 @@ span.primary {
   color: var(--primary-color);
 }
 
+.primary-light {
+  color: var(--primary-color-light);
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /*==================== BUTTONS ====================*/
 
 .button {
@@ -298,7 +306,6 @@ li.nav__item i:nth-child(2) {
 
 .nav__list {
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
 }
 
 .nav__link {
@@ -561,9 +568,9 @@ p.about__heading2:after {
   flex-wrap: wrap;
 }
 
-.ul-container {
+.lodging .ul-container {
   color: #fff;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .ul-container li {
@@ -768,6 +775,13 @@ p.services__heading:after {
 
 /*==================== LODGING ====================*/
 
+.bottom img {
+  display: sticky;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
 .lodging .lodging__container {
   gap: 1rem;
   background-color: #fff;
@@ -778,10 +792,94 @@ p.services__heading:after {
 
 .lodging__content {
   margin-top: 2rem;
-  padding-left: 5rem;
+  justify-content: space-between;
   display: flex;
+  min-width: 50%;
+  max-width: 100%;
+}
 
-  position: relative;
+.lodging__content p,
+.lodging__content {
+  font-family: var(--card-font);
+}
+
+.img-container circle {
+  align-items: center;
+  justify-content: center;
+}
+
+#circle {
+  width: 10rem;
+}
+
+.lodging img:nth-child(2) {
+  max-width: 50%;
+}
+
+img.hotels-logo {
+  min-width: 50px;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.lodging-data {
+  flex-direction: column;
+  display: flex;
+  max-width: 40%;
+}
+
+.lodging-data-second {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  padding-left: 5rem;
+  flex-direction: column;
+  display: flex;
+  max-width: 50%;
+}
+
+h4 {
+  padding-bottom: 1rem;
+  font-family: var(--card-font);
+  max-width: 80%;
+}
+
+.break {
+  width: 100%;
+}
+
+.img-container:nth-child(1) {
+  align-items: center;
+}
+
+.lodging__content .img-container:nth-child(3) {
+  min-width: 7rem;
+}
+
+.lodging__content hr.underline {
+  border-bottom: 0.5rem solid var(--primary-color);
+  width: 8rem;
+  display: in;
+  margin: 1rem 0;
+}
+
+.lodging-data h1 {
+  font-family: var(--nav-font);
+  color: #000;
+}
+
+.lodging-data h1:nth-child(4) {
+  color: var(--primary-color);
+}
+
+.lodging-data h1:nth-child(6) {
+  color: #5607cc;
 }
 
 .lodging__content2 {
@@ -793,38 +891,25 @@ p.services__heading:after {
   grid-template-columns: 0.5fr 1fr 1fr;
 }
 
-.lodging img {
-  max-width: 40%;
-  max-height: 100%;
-}
-
-.img-container {
-  display: flex;
-  min-width: 50%;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.img-container:nth-child(1) {
-  justify-content: flex-start;
-
-  max-width: 50%;
-}
-
 .lodging h1 {
   font-size: var(--h1-font-size);
-
-  padding-bottom: var(--mb-1);
 }
 
 .lodging p {
+  max-width: 80%;
+}
+
+hr {
+  margin: 2rem 0;
+
+  width: 30%;
 }
 
 lodging-data {
   font-size: var(--h2-font-size);
 }
 
-.lodging-data:nth-child(2) {
+.lodging-data:nth-child(2) li {
   padding-left: 5rem;
   width: 80%;
 }
@@ -854,6 +939,12 @@ p.lodging__heading:before {
   padding-left: 3rem;
 }
 
+ul.small li {
+  font-size: 0.8rem;
+
+  font-family: var(--body-font);
+}
+
 /*
 p.services__heading:after {
   content: "";
@@ -868,6 +959,17 @@ p.services__heading:after {
 */
 /*==================== FACILITIES ====================*/
 
+.bottom img {
+  display: sticky;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.lurking {
+  max-width: 100%;
+}
+
 .facilities .facilities__container {
   gap: 1rem;
   background-color: #fff;
@@ -878,57 +980,138 @@ p.services__heading:after {
 
 .facilities__content {
   margin-top: 2rem;
-  padding-left: 5rem;
+  justify-content: space-between;
   display: flex;
-
-  position: relative;
-}
-
-.facilities__content2 {
-  margin: 2rem 0;
-  padding-left: 5rem;
-
-  display: grid;
-
-  grid-template-columns: 0.5fr 1fr 1fr;
+  min-width: 50%;
+  max-width: 100%;
 }
 
 .facilities img {
-  max-width: 40%;
+  max-height: 296px;
 }
 
-.facilities img:nth-child(1),
-.facilities img:nth-child(2) {
-  align-self: flex-end;
+.facilities__content p,
+.facilities__content {
+  font-family: var(--card-font);
+}
+
+.img-container circle {
+  align-items: center;
+  justify-content: center;
+}
+
+#circle {
+  width: 10rem;
+}
+
+img.homes-logo {
+  min-width: 50px;
 }
 
 .img-container {
   display: flex;
-  min-width: 50%;
+  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: flex-end;
   gap: 1rem;
 }
 
-.img-container:nth-child(1) {
-  justify-content: flex-start;
+.facilities-data {
+  flex-direction: column;
+  display: flex;
+  max-width: 40%;
+}
 
+.facilities-data:nth-child(2) {
+  max-width: 30%;
+}
+
+.facilities-data-second {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  padding-left: 5rem;
+  flex-direction: column;
+  display: flex;
   max-width: 50%;
+}
+
+h4 {
+  padding-bottom: 1rem;
+  font-family: var(--card-font);
+  max-width: 80%;
+}
+
+.break {
+  width: 100%;
+}
+
+.img-container:nth-child(1) {
+  align-items: center;
+}
+
+.facilities img:nth-child(3) {
+  border-radius: 2rem 0 0 0;
+}
+
+.facilities__content .img-container:nth-child(3) {
+  min-width: 7rem;
+}
+
+.facilities__content hr.underline {
+  border-bottom: 0.5rem solid var(--primary-color);
+  width: 8rem;
+  display: in;
+  margin: 1rem 0;
+}
+
+.facilities-data h1 {
+  font-family: var(--nav-font);
+  color: #000;
+}
+
+.facilities-data h1:nth-child(4) {
+  color: var(--primary-color);
+}
+
+.facilities-data h1:nth-child(6) {
+  color: #5607cc;
 }
 
 .facilities h1 {
   font-size: var(--h1-font-size);
+}
 
-  padding-bottom: var(--mb-1);
+.facilities__content {
+  column-gap: 2rem;
 }
 
 .facilities p {
+  max-width: 80%;
+}
+
+hr {
+  margin: 2rem 0;
+
+  width: 30%;
+}
+
+.facilities ul {
+  list-style-type: circle;
+}
+
+.homes2 {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding-top: 2rem;
 }
 
 facilities-data {
   font-size: var(--h2-font-size);
 }
 
-.facilities-data:nth-child(2) {
+.facilities-data:nth-child(2) li {
   padding-left: 5rem;
   width: 80%;
 }
@@ -958,7 +1141,40 @@ p.facilities__heading:before {
   padding-left: 3rem;
 }
 
+ul.small li {
+  font-size: 0.8rem;
+
+  font-family: var(--body-font);
+}
+
+/*
+p.services__heading:after {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 5rem;
+  background-color: var(--primary-color-light);
+
+  top: 1.5rem;
+  left: 7rem;
+}
+*/
+
 /*==================== DAYCARE ====================*/
+
+.bottom img {
+  display: sticky;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.lurking {
+  max-width: 100%;
+}
+img.daycare-logo {
+  min-width: 50px;
+}
 
 .daycare .daycare__container {
   gap: 1rem;
@@ -970,55 +1186,141 @@ p.facilities__heading:before {
 
 .daycare__content {
   margin-top: 2rem;
-  padding-left: 5rem;
+  justify-content: space-between;
   display: flex;
-
-  position: relative;
-}
-
-.daycare__content:nth-child(2) {
-  gap: 5.5rem;
-}
-
-.daycare__content2 {
-  margin: 2rem 0;
-  padding-left: 5rem;
-
-  min-width: 200rem;
-  display: grid;
-
-  grid-template-columns: 0.5fr 1fr 1fr;
+  min-width: 50%;
+  max-width: 100%;
 }
 
 .daycare img {
-  max-width: 40%;
-  max-height: 100%;
+  max-height: 296px;
+  max-width: 100%;
+}
+
+.daycare__content p,
+.daycare__content {
+  font-family: var(--card-font);
+}
+
+.img-container circle {
+  align-items: center;
+  justify-content: center;
+}
+
+#circle {
+  width: 10rem;
+}
+
+img.homes-logo {
+  min-width: 50px;
 }
 
 .img-container {
   display: flex;
-  min-width: 50%;
+  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: flex-end;
   gap: 1rem;
 }
 
-.img-container:nth-child(1) {
-  justify-content: flex-start;
+.daycare-data {
+  flex-direction: column;
+  display: flex;
+  max-width: 40%;
+}
 
+.daycare-data:nth-child(2) {
+  max-width: 30%;
+}
+
+.daycare-data-second {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  padding-left: 5rem;
+  flex-direction: column;
+  display: flex;
   max-width: 50%;
+}
+
+h4 {
+  padding-bottom: 1rem;
+  font-family: var(--card-font);
+  max-width: 80%;
+}
+
+.break {
+  width: 100%;
+}
+
+.img-container:nth-child(1) {
+  align-items: center;
+}
+
+.daycare img:nth-child(3) {
+  border-radius: 2rem 0 0 0;
+}
+
+.daycare__content .img-container:nth-child(3) {
+  min-width: 7rem;
+}
+
+.daycare__content hr.underline {
+  border-bottom: 0.5rem solid var(--primary-color);
+  width: 8rem;
+  display: in;
+  margin: 1rem 0;
+}
+
+.daycare-data h1 {
+  font-family: var(--nav-font);
+  color: #000;
+}
+
+.daycare-data h1:nth-child(4) {
+  color: var(--primary-color);
+}
+
+.daycare-data h1:nth-child(6) {
+  color: #5607cc;
 }
 
 .daycare h1 {
   font-size: var(--h1-font-size);
+}
 
-  padding-bottom: var(--mb-1);
+.daycare__content {
+  column-gap: 2rem;
 }
 
 .daycare p {
+  max-width: 80%;
+}
+
+hr {
+  margin: 2rem 0;
+
+  width: 30%;
+}
+
+.daycare ul {
+  list-style-type: circle;
+}
+
+.homes2 {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding-top: 2rem;
 }
 
 daycare-data {
   font-size: var(--h2-font-size);
+}
+
+.daycare-data:nth-child(2) li {
+  padding-left: 5rem;
+  width: 80%;
 }
 
 p.daycare__heading {
@@ -1044,6 +1346,12 @@ p.daycare__heading:before {
   font-weight: var(--font-bold);
   font-size: 2.5rem;
   padding-left: 3rem;
+}
+
+ul.small li {
+  font-size: 0.8rem;
+
+  font-family: var(--body-font);
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1207,11 +1515,35 @@ ubiso .footer__container {
 @media screen and (min-width: 1200px) {
   .header,
   .main,
+  .bottom,
   .footer__container {
     padding: 0;
   }
+
+  .bottom img {
+    display: flex;
+    max-width: 1200px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .lodging__container.container {
+    margin-left: 0;
+  }
+
+  .daycare-data-second {
+    max-width: 100%;
+  }
+
+  .lurking {
+    max-width: 200%;
+  }
+
+  .facilities__container.container {
+    margin-left: 0;
+  }
+  .daycare__container.container {
+    margin-left: 0;
+  }
   .home__data {
     width: 100%;
     padding-left: 2.5rem;
@@ -1295,6 +1627,81 @@ ubiso .footer__container {
   .ul-container:nth-child(2) {
     padding-bottom: 2rem;
   }
+
+  .hotels-logo {
+    max-width: 4rem;
+  }
+
+  .lodging-data {
+    min-width: 20rem;
+  }
+  .facilities-data {
+    min-width: 20rem;
+  }
+  .daycare-data {
+    min-width: 20rem;
+  }
+
+  .lodging__content:nth-child(4) {
+    flex-wrap: wrap;
+  }
+
+  .lodging__content:nth-child(3) {
+    align-items: center;
+    flex-direction: column;
+  }
+  .facilities__content:nth-child(3) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .daycare__content:nth-child(3) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .lodging__content .circle {
+    max-width: 15rem;
+    padding-bottom: 5rem;
+  }
+  .facilities__content .circle {
+    max-width: 15rem;
+    padding-bottom: 5rem;
+  }
+  .daycare__content .circle {
+    max-width: 15rem;
+    padding-bottom: 5rem;
+  }
+
+  .facilities__content:nth-child(5) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .daycare__content:nth-child(5) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lodging-data-second {
+    max-width: 100%;
+  }
+  .facilities-data-second {
+    max-width: 100%;
+  }
+
+  .lodging img:nth-child(2) {
+    max-width: 10rem;
+  }
+
+  lodging.img-container {
+    max-width: 100%;
+  }
+  facilities.img-container {
+    max-width: 100%;
+  }
+  daycare.img-container {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 767px) {
   .container {
@@ -1302,7 +1709,6 @@ ubiso .footer__container {
     margin-right: auto;
   }
 
-  .nav__icon,
   .nav__close,
   .nav__toggle {
     display: none;
@@ -1356,6 +1762,19 @@ ubiso .footer__container {
     width: 60vw;
   }
 
+  img.homes-logo {
+    position: absolute;
+    top: -3rem;
+    min-width: 40px;
+    left: 45%;
+  }
+  img.daycare-logo {
+    position: absolute;
+    top: -3rem;
+    min-width: 40px;
+    left: 45%;
+  }
+
   .services__subtitle {
     font-size: 2.7rem;
   }
@@ -1386,6 +1805,103 @@ ubiso .footer__container {
     font-size: 1.2rem;
     font-style: italic;
   }
+
+  .lodging__content {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .facilities__content {
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 5rem;
+  }
+  .daycare__content {
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .lodging-data-second {
+    padding-left: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .facilities-data-second {
+    padding-left: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .daycare-data-second {
+    padding-left: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lodging__content .circle {
+    max-width: 10rem;
+  }
+  .facilities__content .circle {
+    max-width: 10rem;
+  }
+  .daycare__content .circle {
+    max-width: 10rem;
+  }
+
+  .img-container {
+    justify-content: center;
+  }
+
+  .lodging-data {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .facilities-data {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .daycare-data {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .facilities-data ul {
+    text-align: justify;
+
+    padding-bottom: 1rem;
+  }
+  .daycare-data ul {
+    text-align: justify;
+
+    padding-bottom: 1rem;
+  }
+
+  .hotels-logo {
+    position: absolute;
+    top: -5rem;
+    left: 41%;
+  }
+
+  .about__heading {
+    text-align: center;
+  }
+
+  .about-text h1 {
+    text-align: center;
+  }
+
+  .ul-container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -1407,6 +1923,16 @@ ubiso .footer__container {
   .home__scroll.container {
     justify-content: center;
     padding: 0.5rem 0;
+  }
+
+  .lodging .container {
+    margin: 0;
+  }
+  .facilities .container {
+    margin: 0;
+  }
+  .daycare .container {
+    margin: 0;
   }
 
   .home__data {
@@ -1460,5 +1986,46 @@ ubiso .footer__container {
 
   .services-hero {
     max-width: 100%;
+  }
+
+  .lodging__content .circle {
+    max-width: 8rem;
+    padding-bottom: 1rem;
+  }
+  .facilities__content .circle {
+    max-width: 8rem;
+    padding-bottom: 1rem;
+  }
+  .daycare__content .circle {
+    max-width: 8rem;
+    padding-bottom: 1rem;
+  }
+
+  .hotels-logo {
+    position: absolute;
+    top: -5rem;
+    left: 35%;
+  }
+
+  .lodging .container {
+    margin: 0;
+  }
+  .facilities .container {
+    margin: 0;
+  }
+  .daycare .container {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 350px) {
+    .lodging__container.container {
+      padding: 0;
+    }
+    .facilities__container.container {
+      padding: 0;
+    }
+    .daycare__container.container {
+      padding: 0;
+    }
   }
 }
