@@ -101,6 +101,13 @@ ul {
 a {
   text-decoration: none;
 }
+
+a[href^="tel"] {
+  color: #fff; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
 f img {
   max-width: 100%;
   height: auto;
@@ -1396,6 +1403,7 @@ ul.small li {
 
 .contact__subtitle {
   font-size: var(--small-font-size);
+
   color: #fff;
 }
 
