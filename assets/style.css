@@ -170,6 +170,10 @@ span.primary {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 /*==================== BUTTONS ====================*/
 
 .button {
@@ -1764,7 +1768,7 @@ ubiso .footer__container {
 @media screen and (max-width: 569px) {
   .nav__logo img {
     margin-top: 0;
-    width: 60vw;
+    width: 80vw;
   }
 
   img.homes-logo {
