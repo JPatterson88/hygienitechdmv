@@ -1396,7 +1396,7 @@ ul.small li {
 
 .contact__subtitle {
   font-size: var(--small-font-size);
-  color: var(--primary-color-light);
+  color: #fff;
 }
 
 .contact__content {
