@@ -1387,6 +1387,7 @@ ul.small li {
 .contact__information {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-bottom: var(--mb-2);
 }
 
